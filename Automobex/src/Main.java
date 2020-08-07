@@ -128,7 +128,7 @@ public class Main {
 		
 		// individual percentage: numCompleted/total num users
 		for(Activity a: _activity) {
-			a.setPercentage( (double)a.getNumUsersCompleted() /(double)_users.size() );
+			a.setPercentage( (double)a.getNumUsersCompleted() /(double)_users.keys().size() );
 			totalIndividualPercentage += a.getPercentage();
 		}
 		
